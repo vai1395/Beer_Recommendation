@@ -8,11 +8,11 @@ Our dataset is meticulously curated from discussions on a reputable beer forum -
 ## Approach
 Our recommendation engine employs similarity scores between user-selected attributes and forum comments. We prioritize comments with high similarity scores and positive sentiment. The fusion of similarity scores and sentiment values is achieved through the formula:
 
-\[ \text{final\_score} = \log_2(\text{sentiment}) \times \log_{2.5}(\text{similarity}) \]
+$$ final_score = log₂(sentiment) * log₂.₅(similarity) $$
 
-These final scores are then aggregated at the product level, leading to a recalculated score (\( \text{new\_final\_score} \)), which incorporates both average final scores and the number of comments.
+The final_scores are aggregated to the product level and a new_final_score is calculated using the avg_final_score and #comments (after all the filters) as - 
 
-\[ \text{new\_final\_score} = \log(\text{no. of comments}) \times \left(\frac{\log_2(\text{avg\_final\_score})}{\log(1.5)}\right) \]
+$$ new_final_score = log(no. of comments) * (log₂(avg_final_score)/log(1.5)) $$
 
 The top three recommended beers are based on this new final score.
 
