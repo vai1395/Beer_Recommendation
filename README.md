@@ -17,7 +17,7 @@ $$ new_final_score = log(no. of comments) * (log₂(avg_final_score)/log(1.5)) $
 The top three recommended beers are based on this new final score.
 
 ## Implementation
-Our Python 3 code, encapsulated in the Jupyter notebook [Final Submission/Final Notebook_V3.0.ipynb.ipynb]([path/to/notebook](https://github.com/vai1395/Beer_Recommendation/blob/main/Final%20Submission/Final%20Notebook%20V3.0.ipynb)), utilizes renowned data analysis libraries including pandas, numpy, scikit-learn, nltk, openai, spacy, and selenium. The notebook is structured to facilitate easy comprehension, with sections covering data loading, preprocessing, exploratory data analysis, and model building.
+Our Python 3 code, encapsulated in the Jupyter notebook [Final Submission/Final Notebook_V3.0.ipynb.ipynb](https://github.com/vai1395/Beer_Recommendation/blob/main/Final%20Submission/Final%20Notebook%20V3.0.ipynb), utilizes renowned data analysis libraries including pandas, numpy, scikit-learn, nltk, openai, spacy, and selenium. The notebook is structured to facilitate easy comprehension, with sections covering data loading, preprocessing, exploratory data analysis, and model building.
 
 ## Results and Analysis
 Beyond the recommendation aspect, our analysis delves into the nuances of employing word embeddings for similarity computation in Natural Language Processing (NLP). Additionally, we explore the effectiveness of LLMs compared to VADER in discerning human sarcasm during sentiment analysis, utilizing OpenAI.
